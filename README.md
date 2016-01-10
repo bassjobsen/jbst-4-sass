@@ -11,10 +11,10 @@ JBST4 is a blank WordPress theme built with Bootstrap 4.
 - Run `gulp` to confirm everything is working
 
 ### CSS Only
-- You can find the CSS only version at https://github/bassjobsen/jbst-4
+- You can find the CSS only version at [https://github/bassjobsen/jbst-4](https://github/bassjobsen/jbst-4)
 
 ### Flexbox
-- You can find CSS only version with flexbox support at https://github/bassjobsen/jbst-4-css-flexbox
+- You can find CSS only version with flexbox support at [https://github/bassjobsen/jbst-4-css-flexbox](https://github/bassjobsen/jbst-4-css-flexbox)
 
 ### Credits
 - Forked from and thanks to [JointsWP](http://jointswp.com/)
