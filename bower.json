@@ -1,0 +1,8 @@
+{
+  "name": "jbst4",
+  "private": true,
+  "ignore":  [],
+  "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#v4-dev"
+  }
+}
