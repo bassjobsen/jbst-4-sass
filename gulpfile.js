@@ -3,7 +3,7 @@ var gulp  = require('gulp'),
     gutil = require('gulp-util'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     stylish = require('jshint-stylish'),
     uglify = require('gulp-uglify'),
@@ -35,7 +35,7 @@ gulp.task('styles', function() {
         }))
     .pipe(gulp.dest('./assets/css/'))     
     .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./assets/css/'))
 });    
     
@@ -44,7 +44,7 @@ gulp.task('site-js', function() {
   return gulp.src([	
 	  
            // Grab your custom scripts
-  		  './assets/js/scripts/*.js'
+  		  './assets/scripts/*.js'
   		  
   ])
     .pipe(plumber())

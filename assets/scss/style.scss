@@ -38,6 +38,7 @@ CSS file.
 @import "../../vendor/bootstrap/scss/card";
 @import "../../vendor/bootstrap/scss/breadcrumb";
 @import "../../vendor/bootstrap/scss/pagination";
+@import "../../vendor/bootstrap/scss/pager";
 @import "../../vendor/bootstrap/scss/labels";
 @import "../../vendor/bootstrap/scss/jumbotron";
 @import "../../vendor/bootstrap/scss/alert";
@@ -55,7 +56,12 @@ CSS file.
 
 // Utility classes
 @import "../../vendor/bootstrap/scss/utilities";
+@import "../../vendor/bootstrap/scss/utilities-background";
+@import "../../vendor/bootstrap/scss/utilities-spacing";
+@import "../../vendor/bootstrap/scss/utilities-responsive";
 
+// Import Customizations
+@import "includes/navbar";
 
 // Import your custom styles
 @import "main";
