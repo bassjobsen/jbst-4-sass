@@ -1,19 +1,20 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: JBST 4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-02 22:11+0100\n"
 "PO-Revision-Date: \n"
-"Language-Team: boufaka <boufaka@gmail.com>\n"
+"Language-Team: Spanish <bass@w3masters.nl>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n\n"
 "X-Poedit-Basepath: /home/boufaka/GIT/bones\n"
-"Last-Translator: \n"
-"X-Poedit-SearchPath-0: /home/fulgor/GIT/bones\n"
+"Last-Translator: Bass Jobsen <bass@w3masters.nl>\n"
+"Language: es_ES\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: comments.php:12
 msgid "This post is password protected. Enter the password to view comments."
@@ -80,8 +81,7 @@ msgstr "Salir"
 msgid "Name"
 msgstr "Nombre"
 
-#: comments.php:93
-#: comments.php:98
+#: comments.php:93 comments.php:98
 msgid "(required)"
 msgstr "(requerido)"
 
@@ -126,26 +126,19 @@ msgstr "Puedes usar estas etiquetas"
 msgid "Page %s"
 msgstr "Página %s"
 
-#: taxonomy-custom_cat.php:22
-#: archive.php:9
+#: taxonomy-custom_cat.php:22 archive.php:9
 msgid "Posts Categorized:"
 msgstr "Archivos de categoría:"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "Posted"
 msgstr "Publicado"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "by"
 msgstr "por"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "filed under"
 msgstr "archivadas en"
 
@@ -174,8 +167,11 @@ msgid "Epic 404 - Article Not Found"
 msgstr "Épico 404 - Artículo no encontrado"
 
 #: 404.php:17
-msgid "The article you were looking for was not found, but maybe try looking again!"
-msgstr "¡El artículo que estás buscando no ha sido encontrado, pero puedes intentarlo más adelante!"
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+"¡El artículo que estás buscando no ha sido encontrado, pero puedes "
+"intentarlo más adelante!"
 
 #: search.php:7
 msgid "Search Results for:"
@@ -189,8 +185,7 @@ msgstr "Leer más en"
 msgid "Posts Tagged:"
 msgstr "Entradas etiquetadas:"
 
-#: archive.php:17
-#: author.php:8
+#: archive.php:17 author.php:8
 msgid "Posts By:"
 msgstr "Entradas de:"
 
@@ -244,7 +239,9 @@ msgstr "No encontrado"
 
 #: embed-not_found.php:6
 msgid "Sorry, but the requested resource was not found on this site."
-msgstr "Lo sentimos pero el recurso solicitado no se encuentra disponible en este sitio."
+msgstr ""
+"Lo sentimos pero el recurso solicitado no se encuentra disponible en este "
+"sitio."
 
 #: sidebar.php:15
 msgid "Please activate some Widgets."
@@ -377,4 +374,3 @@ msgstr "Añadir nueva etiqueta personalizada"
 #: library/custom-post-type.php:103
 msgid "New Custom Tag Name"
 msgstr "Nuevo nombre de etiqueta personalizada"
-

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: one-column,two-columns,right-sidebar,responsive-layout,custom-background,custom-colors,custom-header,custom-menu
 Requires at least: 4.1-alpha
 Tested up to: 4.4.1
-Stable tag: 4.0.0
+Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

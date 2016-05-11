@@ -1,23 +1,27 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: JBST 4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-02 22:11+0100\n"
 "PO-Revision-Date: \n"
-"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
+"Language-Team: Frensh <bass@w3masters.nl>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n\n"
 "X-Poedit-Basepath: /home/fulgor/GIT/bones\n"
-"Last-Translator: \n"
+"Last-Translator: Bass Jobsen <bass@w3masters.nl>\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: /home/fulgor/GIT/bones\n"
 
 #: comments.php:12
 msgid "This post is password protected. Enter the password to view comments."
-msgstr "Cet article est protégé par un mot de passe. Entrer le mot de passe pour voir les commentaires."
+msgstr ""
+"Cet article est protégé par un mot de passe. Entrer le mot de passe pour "
+"voir les commentaires."
 
 #: comments.php:23
 msgid "Response"
@@ -80,8 +84,7 @@ msgstr "Se déconnecter"
 msgid "Name"
 msgstr "Nom"
 
-#: comments.php:93
-#: comments.php:98
+#: comments.php:93 comments.php:98
 msgid "(required)"
 msgstr "(requis)"
 
@@ -126,26 +129,19 @@ msgstr "Vous pouvez utiliser ces tags"
 msgid "Page %s"
 msgstr "Page %s"
 
-#: taxonomy-custom_cat.php:22
-#: archive.php:9
+#: taxonomy-custom_cat.php:22 archive.php:9
 msgid "Posts Categorized:"
 msgstr "Archive des articles sous la catégorie :"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "Posted"
 msgstr "Publié"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "by"
 msgstr "par"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "filed under"
 msgstr "dans la catégorie"
 
@@ -174,8 +170,10 @@ msgid "Epic 404 - Article Not Found"
 msgstr "404 Epique - Article non trouvé"
 
 #: 404.php:17
-msgid "The article you were looking for was not found, but maybe try looking again!"
-msgstr "L'article que vous demandez est inexistant, effectuez plutôt une recherche"
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+"L'article que vous demandez est inexistant, effectuez plutôt une recherche"
 
 #: search.php:7
 msgid "Search Results for:"
@@ -189,8 +187,7 @@ msgstr "En lire plus sur"
 msgid "Posts Tagged:"
 msgstr "Articles taggés :"
 
-#: archive.php:17
-#: author.php:8
+#: archive.php:17 author.php:8
 msgid "Posts By:"
 msgstr "Articles par :"
 
@@ -377,4 +374,3 @@ msgstr "Ajouter un nouveau tag personalisé"
 #: library/custom-post-type.php:103
 msgid "New Custom Tag Name"
 msgstr "Libellé du nouveau tag personalisé"
-

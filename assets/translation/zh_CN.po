@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: JBST 4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-02 22:11+0100\n"
 "PO-Revision-Date: \n"
@@ -9,13 +9,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n\n"
 "X-Poedit-Basepath: /home/fulgor/GIT/bones\n"
-"Last-Translator: Colt Ma <mumchristmas@gmail.com>\n"
-"X-Poedit-Language: Chinese\n"
-"X-Poedit-Country: CHINA\n"
-"X-Poedit-SearchPath-0: /home/fulgor/GIT/bones\n"
+"Last-Translator: Bass Jobsen <bass@w3masters.nl>\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: comments.php:12
 msgid "This post is password protected. Enter the password to view comments."
@@ -82,8 +81,7 @@ msgstr "注销"
 msgid "Name"
 msgstr "称谓"
 
-#: comments.php:93
-#: comments.php:98
+#: comments.php:93 comments.php:98
 msgid "(required)"
 msgstr "（必填项）"
 
@@ -128,26 +126,19 @@ msgstr "你可以使用这些标签"
 msgid "Page %s"
 msgstr "第 %s 页"
 
-#: taxonomy-custom_cat.php:22
-#: archive.php:9
+#: taxonomy-custom_cat.php:22 archive.php:9
 msgid "Posts Categorized:"
 msgstr "文章分类："
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "Posted"
 msgstr "发布于"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "by"
 msgstr "作者:"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "filed under"
 msgstr "分类:"
 
@@ -176,7 +167,8 @@ msgid "Epic 404 - Article Not Found"
 msgstr "错误 404 － 您所访问的文档似乎并不存在"
 
 #: 404.php:17
-msgid "The article you were looking for was not found, but maybe try looking again!"
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
 msgstr "您寻找的内容并不存在，要不再找找？"
 
 #: search.php:7
@@ -191,8 +183,7 @@ msgstr "阅读全文："
 msgid "Posts Tagged:"
 msgstr "文章标签："
 
-#: archive.php:17
-#: author.php:8
+#: archive.php:17 author.php:8
 msgid "Posts By:"
 msgstr "文章作者："
 
@@ -379,4 +370,3 @@ msgstr "新建自定义标签"
 #: library/custom-post-type.php:103
 msgid "New Custom Tag Name"
 msgstr "新自定义标签名称"
-

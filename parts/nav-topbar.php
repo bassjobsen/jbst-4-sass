@@ -2,7 +2,7 @@
   <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar">
     &#9776;
   </button>
-  <div class="nav navbar-nav navbar-toggleable-sm collapse" id="CollapsingNavbar">
+  <div class="navbar-toggleable-sm collapse" id="CollapsingNavbar">
     <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
     <?php jbst4_top_nav(); ?>
   <form class="form-inline pull-md-right search-form" action="<?php echo home_url( '/' ); ?>">
