@@ -16,7 +16,7 @@ function jbst4_top_nav() {
         'theme_location' => 'main-nav',        			// Where it's located in the theme
         'depth' => 1,                                   // Limit the depth of the nav
         'fallback_cb' => false,                         // Fallback function (see below)
-        'walker' => new Topbar_Menu_Walker()
+        'walker' => new JBST4_Topbar_Menu_Walker()
     ));
 } /* End Top Menu */
 

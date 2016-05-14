@@ -3,7 +3,7 @@
 
 /************* DASHBOARD WIDGETS *****************/
 // Disable default dashboard widgets
-function disable_default_dashboard_widgets() {
+function jbst4_disable_default_dashboard_widgets() {
 	// Remove_meta_box('dashboard_right_now', 'dashboard', 'core');    // Right Now Widget
 	remove_meta_box('dashboard_recent_comments', 'dashboard', 'core'); // Comments Widget
 	remove_meta_box('dashboard_incoming_links', 'dashboard', 'core');  // Incoming Links Widget
@@ -32,7 +32,7 @@ function jbst4_rss_dashboard_widget() {
 		$limit = $feed->get_item_quantity(5);                      // specify number of items
 		$items = $feed->get_items(0, $limit);                      // create an array of items
 	}
-	if ($limit == 0) echo '<div>The RSS Feed is either empty or unavailable.</div>';   // fallback message
+	if ($limit == 0) echo '<div>'. __('The RSS Feed is either empty or unavailable.', 'jbst-4') .'</div>';   // fallback message
 	else foreach ($items as $item) { ?>
 
 	<h4 style="margin-bottom: 0;">
@@ -55,7 +55,7 @@ function jbst4_custom_dashboard_widgets() {
 	*/
 }
 // removing the dashboard widgets
-add_action('admin_menu', 'disable_default_dashboard_widgets');
+add_action('admin_menu', 'jbst4_disable_default_dashboard_widgets');
 // adding any custom widgets
 add_action('wp_dashboard_setup', 'jbst4_custom_dashboard_widgets');
 

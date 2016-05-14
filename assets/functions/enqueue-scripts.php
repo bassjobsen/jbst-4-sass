@@ -1,5 +1,5 @@
 <?php
-function site_scripts() {
+function jbst4_site_scripts() {
   global $wp_styles; // Call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
     
      // Adding tether in the footer
@@ -19,4 +19,4 @@ function site_scripts() {
       wp_enqueue_script( 'comment-reply' );
     }
 }
-add_action('wp_enqueue_scripts', 'site_scripts', 999);
+add_action('wp_enqueue_scripts', 'jbst4_site_scripts', 999);

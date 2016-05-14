@@ -1,6 +1,6 @@
 <?php 
 // Big thanks to Brett Mason (https://github.com/brettsmason) for the awesome walker
-class Topbar_Menu_Walker extends Walker_Nav_Menu {
+class JBST4_Topbar_Menu_Walker extends Walker_Nav_Menu {
 
     // add main/sub classes to li's and links(&$output, $item, 
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0) {
@@ -22,7 +22,7 @@ class Topbar_Menu_Walker extends Walker_Nav_Menu {
     $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
     if(in_array('current-menu-item', $item->classes)) {
       $attributes .= ' class="nav-link active"';
-        $item_output = sprintf( '%1$s<a%2$s>%3$s%4$s%5$s  <span class="sr-only">(current)</span></a>%6$s',
+        $item_output = sprintf( '%1$s<a%2$s>%3$s%4$s%5$s  <span class="sr-only">(' . __('current', 'jbst-4') . ')</span></a>%6$s',
         $args->before,
         $attributes,
         $args->link_before,

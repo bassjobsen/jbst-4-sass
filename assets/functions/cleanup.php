@@ -73,14 +73,6 @@ function jbst4_excerpt_more($more) {
 return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'jbst-4') . get_the_title($post->ID).'">'. __('Read more &raquo;', 'jbst-4') .'</a>';
 }
 
-//  Stop WordPress from using the sticky class (which conflicts with Foundation), and style WordPress sticky posts using the .wp-sticky class instead
-function remove_sticky_class($classes) {
-	$classes = array_diff($classes, array("sticky"));
-	$classes[] = 'wp-sticky';
-	return $classes;
-}
-add_filter('post_class','remove_sticky_class');
-
 //This is a modified the_author_posts_link() which just returns the link. This is necessary to allow usage of the usual l10n process with printf()
 function jbst4_get_the_author_posts_link() {
 	global $authordata;

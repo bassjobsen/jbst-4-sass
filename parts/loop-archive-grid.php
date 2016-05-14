@@ -18,7 +18,7 @@ $grid_columns = 4; ?>
 				</section> <!-- end article section -->
 			
 				<header class="article-header">
-					<h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>	
+					<h3 class="title"><a href="<?php esc_url( the_permalink() ) ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>	
 					<?php get_template_part( 'parts/content', 'byline' ); ?>				
 				</header> <!-- end article header -->	
 								
