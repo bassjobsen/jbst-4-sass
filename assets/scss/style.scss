@@ -60,7 +60,14 @@ CSS file.
 @import "../../vendor/bootstrap/scss/utilities-spacing";
 @import "../../vendor/bootstrap/scss/utilities-responsive";
 
-// Import Customizations
+// templates
+@import "includes/masonry";
+@import "includes/offcanvas";
+
+// Components
+@import "includes/comments";
+
+// page elements
 @import "includes/navbar";
 
 // Import your custom styles

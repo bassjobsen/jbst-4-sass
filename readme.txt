@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 JBST4 is a blank WordPress theme built with Bootstrap 4.
 
 == Description ==
-JBST4 is a blank WordPress theme built with Bootstrap 4. It includes all of the power of Bootstrap 4 into your Wordpress theme.
+JBST4 is a blank WordPress theme built with Bootstrap 4. It includes all of the power of Bootstrap 4 into your Wordpress theme. It includes template for a masony grid layout and an off-canvas menu.
 
 == Assets ==
  

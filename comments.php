@@ -31,9 +31,9 @@
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
-		<ol class="commentlist">
+		<ul class="media-list">
 			<?php wp_list_comments('type=comment&callback=jbst4_comments'); ?>
-		</ol>
+		</ul>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
@@ -56,6 +56,6 @@
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'jbst-4' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(array('class_submit'=>'button')); ?>
+	<?php comment_form(array('class_submit'=>'btn btn-accent-color')); ?>
 
 </div><!-- #comments -->

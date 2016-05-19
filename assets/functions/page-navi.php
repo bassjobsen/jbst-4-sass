@@ -36,7 +36,8 @@ function jbst4_page_navi($before = '', $after = '') {
 		echo '<li class="page-link"><a href="'.get_pagenum_link().'" title="'.$first_page_text.'">'.$first_page_text.'</a></li>';
 	}
 	echo '<li class="page-item">';
-	previous_posts_link('Previous');
+	previous_posts_link('<span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">'. __( 'Previous', 'jbst-4' ) .'</span>');
 	echo '</li>';
 	for($i = $start_page; $i  <= $end_page; $i++) {
 		if($i == $paged) {
@@ -46,7 +47,8 @@ function jbst4_page_navi($before = '', $after = '') {
 		}
 	}
 	echo '<li class="page-item">';
-	next_posts_link('Next'); 
+	next_posts_link('<span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">'. __( 'Next', 'jbst-4' ) .'</span>'); 
 	echo '</li>';
 	if ($end_page < $max_page) {
 		$last_page_text = __( "Last", 'jbst-4' );
@@ -54,3 +56,13 @@ function jbst4_page_navi($before = '', $after = '') {
 	}
 	echo '</ul></nav>'.$after."";
 } /* End page navi */
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
+
+function posts_link_attributes_next() {
+    return 'class="page-link" aria-label="' . __( 'Next', 'jbst-4' ) . '"';
+}
+function posts_link_attributes_previous() {
+    return 'class="page-link" aria-label="' . __( 'Previous', 'jbst-4' ) . '"';
+}

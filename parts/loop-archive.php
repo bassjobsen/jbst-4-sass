@@ -10,6 +10,6 @@
 	</section> <!-- end article section -->
 						
 	<footer class="article-footer">
-    	<p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jbst-4') . '</span> ', ', ', ''); ?></p>
+    	<p class="tags"><small class="text-muted"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jbst-4') . '</span> ', ', ', ''); ?></small></p>
 	</footer> <!-- end article footer -->				    						
 </article> <!-- end article -->

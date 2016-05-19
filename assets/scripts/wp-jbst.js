@@ -11,5 +11,10 @@ jQuery(document).ready(function() {
 		
 	// Adds Flex Video to YouTube and Vimeo Embeds
 	jQuery('iframe[src*="youtube.com"], iframe[src*="vimeo.com"]').addClass('embed-responsive-item').wrap("<div class='embed-responsive embed-responsive-16by9'/>");
+     
+    // offcanvas menu
+    jQuery('[data-toggle="offcanvas"]').click(function () {
+      jQuery('.row-offcanvas').toggleClass('active');
+    });
 
 });
