@@ -16,6 +16,5 @@ JBST4 is a blank WordPress theme built with Bootstrap 4. It includes all of the 
 == Assets ==
  
  * Bootstrap 4, http://getbooststrap.com/, MIT
+ * Tether, http://github.hubspot.com/tether/, MIT
 
--- images -- 
- * assets/img/*, GPLv2 

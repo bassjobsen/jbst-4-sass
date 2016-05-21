@@ -20,6 +20,16 @@ add_theme_support( 'custom-background', apply_filters( 'jbst4_custom_background_
   'default-attachment' => 'fixed',
 ) ) );
 
+/*
+* Enable support for custom logo.
+*
+*/
+add_theme_support( 'custom-logo', array(
+  'height'      => 240,
+  'width'       => 240,
+  'flex-height' => true,
+) );
+
 
 // Theme support options
 require_once(get_template_directory().'/assets/functions/theme-support.php'); 
@@ -44,19 +54,7 @@ require_once(get_template_directory().'/assets/functions/comments.php');
 require_once(get_template_directory().'/assets/functions/page-navi.php'); 
 
 // Adds support for multiple languages
-require_once(get_template_directory().'/assets/translation/translation.php'); 
+require_once(get_template_directory().'/assets/translation/translation.php');
 
 // Adds site styles to the WordPress editor
-//require_once(get_template_directory().'/assets/functions/editor-styles.php'); 
-
-// Related post function - no need to rely on plugins
-// require_once(get_template_directory().'/assets/functions/related-posts.php'); 
-
-// Use this as a template for custom post types
-// require_once(get_template_directory().'/assets/functions/custom-post-type.php');
-
-// Customize the WordPress login menu
-// require_once(get_template_directory().'/assets/functions/login.php'); 
-
-// Customize the WordPress admin
-// require_once(get_template_directory().'/assets/functions/admin.php'); 
+require_once(get_template_directory().'/assets/functions/editor-styles.php'); 
