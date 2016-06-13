@@ -6,12 +6,13 @@
     </header> <!-- end article header -->
 					
     <section class="entry-content" itemprop="articleBody">
-		<?php the_post_thumbnail('full'); ?>
+		<?php the_post_thumbnail('full', array('itemprop' => 'image')); ?>
 		<?php the_content(); ?>
 	</section> <!-- end article section -->
 						
 	<footer class="article-footer">
-		<p class="tags"><small class="text-muted"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jbst-4') . '</span> ', ', ', ''); ?></small></p>	</footer> <!-- end article footer -->
+		<p class="tags"><small class="text-muted"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jbst-4') . '</span> ', ', ', ''); ?></small></p>	
+        </footer> <!-- end article footer -->
 									
 	<?php comments_template(); ?>	
 													

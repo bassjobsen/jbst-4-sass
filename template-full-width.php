@@ -10,7 +10,7 @@ Template Name: Full Width (No Sidebar)
 	
 		<div id="inner-content" class="row">
 	
-		    <main id="main" class="col-xs-12" role="main">
+		    <main id="main" class="col-xs-12" role="main" itemprop="mainContentOfPage">
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

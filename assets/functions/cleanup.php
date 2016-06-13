@@ -70,7 +70,7 @@ function jbst4_gallery_style($css) {
 function jbst4_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'jbst-4') . get_the_title($post->ID).'">'. __('Read more &raquo;', 'jbst-4') .'</a>';
+return '...  <a class="excerpt-read-more" href="'. esc_url( get_permalink($post->ID) ). '" title="'. __('Read', 'jbst-4') . get_the_title($post->ID).'">'. __('Read more &raquo;', 'jbst-4') .'</a>';
 }
 
 //This is a modified the_author_posts_link() which just returns the link. This is necessary to allow usage of the usual l10n process with printf()

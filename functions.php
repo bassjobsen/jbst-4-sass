@@ -14,25 +14,11 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1-alpha', '<' ) ) {
         require get_template_directory() . '/parts/back-compat.php';
 }
 
-// Setup the WordPress core custom background feature.
-add_theme_support( 'custom-background', apply_filters( 'jbst4_custom_background_args', array(
-  'default-color'      => '#fff',
-  'default-attachment' => 'fixed',
-) ) );
-
-/*
-* Enable support for custom logo.
-*
-*/
-add_theme_support( 'custom-logo', array(
-  'height'      => 240,
-  'width'       => 240,
-  'flex-height' => true,
-) );
-
-
 // Theme support options
 require_once(get_template_directory().'/assets/functions/theme-support.php'); 
+
+// Add and apply the wp_render_title_tag_filter filter
+require_once(get_template_directory().'/assets/functions/page-title.php'); 
 
 // WP Head and other cleanup functions
 require_once(get_template_directory().'/assets/functions/cleanup.php'); 
@@ -56,5 +42,5 @@ require_once(get_template_directory().'/assets/functions/page-navi.php');
 // Adds support for multiple languages
 require_once(get_template_directory().'/assets/translation/translation.php');
 
-// Adds site styles to the WordPress editor
-require_once(get_template_directory().'/assets/functions/editor-styles.php'); 
+// Adds Schema.org
+require_once(get_template_directory().'/assets/functions/scheme.php'); 

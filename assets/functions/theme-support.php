@@ -1,8 +1,14 @@
 <?php
-	
 // Adding WP Functions & Theme Support
 function jbst4_theme_support() {
+    
+    // Setup the WordPress core custom background feature.
+    add_theme_support( 'custom-background', apply_filters( 'jbst4_custom_background_args', array(
+      'default-color'      => '#fff',
+      'default-attachment' => 'fixed',
+    ) ) );
 
+ 
 	// Add WP Thumbnail Support
 	add_theme_support( 'post-thumbnails' );
 	
@@ -23,20 +29,20 @@ function jbst4_theme_support() {
 	         	'search-form', 
 	         ) 
 	);
-	
-	// Adding post format support
-	/* add_theme_support( 'post-formats',
-		array(
-			'aside',             // title less blurb
-			'gallery',           // gallery of images
-			'link',              // quick link to other site
-			'image',             // an image
-			'quote',             // a quick quote
-			'status',            // a Facebook like status update
-			'video',             // video
-			'audio',             // audio
-			'chat'               // chat transcript
-		)
-	); */	
-	
+/* custom logo */    
+    
+function theme_prefix_setup() {
+    /*
+    * Enable support for custom logo.
+    *
+    */
+    if ( function_exists( 'the_custom_logo' ) ) {
+    add_theme_support( 'custom-logo', array(
+      'height'      => 240,
+      'width'       => 240,
+      'flex-height' => true,
+    ) );
+    }
+}
+add_action( 'after_setup_theme', 'theme_prefix_setup' );	
 } /* end theme support */

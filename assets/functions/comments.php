@@ -2,7 +2,7 @@
 // Comment Layout
 function jbst4_comments($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
-	<li <?php comment_class('media'); ?>>
+	<li <?php comment_class('media'); ?> itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			<div class="media-left">
 			    <?php echo get_avatar( $comment, 75, '', sprintf( esc_html__( 'Avatar of %s', 'jbst-4' ), get_comment_author() ), array('class' => 'media-object')); ?>
 			</div>

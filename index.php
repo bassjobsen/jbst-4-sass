@@ -4,17 +4,17 @@
 	
 		<div id="inner-content" class="row">
 	
-		    <main id="main" class="col-md-8" role="main">
+		    <main id="main" class="col-md-8" role="main" itemprop="mainContentOfPage">
 		    
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			 
 					<!-- To see additional archive styles, visit the /parts directory -->
 					<?php get_template_part( 'parts/loop', 'archive' ); ?>
 				    
-				<?php endwhile; ?>	
+                    <?php endwhile; ?>	
 
 					<?php jbst4_page_navi(); ?>
-					
+
 				<?php else : ?>
 											
 					<?php get_template_part( 'parts/content', 'missing' ); ?>
