@@ -29,20 +29,23 @@ function jbst4_theme_support() {
 	         	'search-form', 
 	         ) 
 	);
+	
+} /* end theme support */
+
 /* custom logo */    
     
-function theme_prefix_setup() {
+function jbst4_theme_prefix_setup() {
     /*
     * Enable support for custom logo.
     *
     */
+
     if ( function_exists( 'the_custom_logo' ) ) {
     add_theme_support( 'custom-logo', array(
-      'height'      => 240,
-      'width'       => 240,
-      'flex-height' => true,
+      'height'      => 120,
+      'width'       => 360,
+      'flex-height' => true
     ) );
     }
 }
-add_action( 'after_setup_theme', 'theme_prefix_setup' );	
-} /* end theme support */
+add_action( 'after_setup_theme', 'jbst4_theme_prefix_setup' );
