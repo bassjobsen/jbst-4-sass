@@ -1,4 +1,4 @@
-Currently using Bootstrap 4.0-alpha2 (Sass version)
+Currently using Bootstrap v4.0.0-alpha.4 (Sass version)
 
 ### What is JBST4?
 JBST4 is a blank WordPress theme built with Bootstrap 4.

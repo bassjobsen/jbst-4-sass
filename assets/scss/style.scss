@@ -10,6 +10,7 @@ CSS file.
 @import "variables"; // custom variables
 
 // Core variables and mixins
+@import "../../vendor/bootstrap/scss/custom";
 @import "../../vendor/bootstrap/scss/variables";
 @import "../../vendor/bootstrap/scss/mixins";
 
@@ -38,8 +39,7 @@ CSS file.
 @import "../../vendor/bootstrap/scss/card";
 @import "../../vendor/bootstrap/scss/breadcrumb";
 @import "../../vendor/bootstrap/scss/pagination";
-@import "../../vendor/bootstrap/scss/pager";
-@import "../../vendor/bootstrap/scss/labels";
+@import "../../vendor/bootstrap/scss/tags";
 @import "../../vendor/bootstrap/scss/jumbotron";
 @import "../../vendor/bootstrap/scss/alert";
 @import "../../vendor/bootstrap/scss/progress";
@@ -56,9 +56,6 @@ CSS file.
 
 // Utility classes
 @import "../../vendor/bootstrap/scss/utilities";
-@import "../../vendor/bootstrap/scss/utilities-background";
-@import "../../vendor/bootstrap/scss/utilities-spacing";
-@import "../../vendor/bootstrap/scss/utilities-responsive";
 
 // templates
 @import "includes/masonry";
