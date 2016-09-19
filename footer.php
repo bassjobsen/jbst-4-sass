@@ -6,7 +6,7 @@
 		    					</nav>
 		    				</div>
 							<div class="col-xs-12">
-								<p style="text-align: center;">&copy; <time>2016</time> <?php esc_html( bloginfo('name') ); ?>.</p>
+								<p style="text-align: center;">&copy; <time><?php get_the_time('Y')?></time> <?php esc_html( bloginfo('name') ); ?>.</p>
 							</div>
 						</div> <!-- end #inner-footer -->
 					</footer> <!-- end .footer -->

@@ -2,7 +2,7 @@
 <?php the_post_thumbnail('full', array('class' => 'card-img-top')); ?>
 <div class="mansory-blog-post card-block">
 	<header class="article-header">
-		<h2 class="card-title" itemprop="headline"><a href="<?php esc_url( get_permalink() ) ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		<h2 class="card-title" itemprop="headline"><a href="<?php get_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 		<?php get_template_part( 'parts/content', 'byline-masonry' ); ?>
 	</header> <!-- end article header -->
 					

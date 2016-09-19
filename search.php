@@ -6,7 +6,7 @@
 	
 			<main id="main" class="col-md-8" role="main">
 				<header>
-					<h1 class="archive-title"><?php _e('Search Results for:', 'jbst-4'); ?> <?php echo esc_attr(get_search_query()); ?></h1>
+					<h1 class="archive-title"><?php _e('Search Results for:', 'jbst-4'); ?> <?php echo get_search_query(); ?></h1>
 				</header>
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

@@ -14,9 +14,7 @@
 		    <p><?php get_search_form(); ?></p>
 		</section> <!-- end search section -->
 		
-		<footer class="article-footer">
-			<p><?php _e("This is the error message in the parts/missing-content.php template.", "jbst-4"); ?></p>
-		</footer>
+
 		
 	<?php else: ?>
 	
@@ -32,10 +30,6 @@
 		    <p><?php get_search_form(); ?></p>
 		</section> <!-- end search section -->
 		
-		<footer class="article-footer">
-		  <p><?php _e("This is the error message in the parts/missing-content.php template.", "jbst-4"); ?></p>
-		</footer>
-			
 	<?php endif; ?>
 	
 </div>

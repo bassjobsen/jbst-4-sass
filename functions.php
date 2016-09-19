@@ -8,9 +8,9 @@ if ( ! isset( $content_width ) ) {
 }
 
 /**
- * JBST 4 only works in WordPress 4.1 or later.
+ * JBST 4 only works in WordPress 4.4 or later.
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.1-alpha', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
         require get_template_directory() . '/parts/back-compat.php';
 }
 

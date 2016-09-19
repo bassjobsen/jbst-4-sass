@@ -3,7 +3,7 @@
 
 		<?php dynamic_sidebar( 'offcanvas' ); ?>
 
-	<?php else : ?>
+	<?php else if ( current_user_can( 'edit_theme_options' ) ): ?>
 
 	<!-- This content shows up if there are no widgets defined in the backend. -->
 						
