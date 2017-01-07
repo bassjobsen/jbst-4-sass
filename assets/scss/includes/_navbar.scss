@@ -6,7 +6,7 @@
     }
   }
   .search-form {
-    @extend .pull-md-right;
+    @extend .float-md-right;
     @include media-breakpoint-up(md) {
       .input-group {
         max-width: 300px;

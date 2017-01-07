@@ -12,7 +12,7 @@ function jbst4_top_nav() {
 	 wp_nav_menu(array(
         'container' => false,                           // Remove nav container
         'menu_class' => '',       // Adding custom nav class
-        'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>',
+        'items_wrap' => '<ul class="navbar-nav mr-auto">%3$s</ul>',
         'theme_location' => 'main-nav',        			// Where it's located in the theme
         'depth' => 0,                                   // Limit the depth of the nav
         'fallback_cb' => false,                         // Fallback function (see below)

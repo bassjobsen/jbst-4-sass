@@ -1,8 +1,8 @@
 <?php
 function jbst4_toggle_button() {
 ?>
-  <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar">
-    &#9776;
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
   
 <?php
@@ -23,14 +23,15 @@ if (has_custom_logo()) {
 <?php
 }
 ?>
-<nav class="navbar navbar-light bg-faded navbar-full" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
   <?php
   if (!has_custom_logo()) {
     jbst4_toggle_button();  
   }
   ?>      
-  <div class="container navbar-toggleable-sm collapse" id="CollapsingNavbar">
-    <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><span itemprop="name"><?php esc_html( bloginfo('name') ); ?></span></a>
+  <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><span itemprop="name"><?php esc_html( bloginfo('name') ); ?></span></a>
+    
+  <div class="container collapse navbar-collapse" id="CollapsingNavbar">
     <?php jbst4_top_nav(); ?>
     <?php get_search_form(); ?> 
   </div>
