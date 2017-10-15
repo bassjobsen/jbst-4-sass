@@ -15,32 +15,35 @@ if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
 }
 
 // Theme support options
-require_once(get_template_directory().'/assets/functions/theme-support.php'); 
+require_once(get_template_directory().'/functions/theme-support.php'); 
 
 // Add and apply the wp_render_title_tag_filter filter
-require_once(get_template_directory().'/assets/functions/page-title.php'); 
+require_once(get_template_directory().'/functions/page-title.php'); 
 
 // WP Head and other cleanup functions
-require_once(get_template_directory().'/assets/functions/cleanup.php'); 
+require_once(get_template_directory().'/functions/cleanup.php'); 
 
 // Register scripts and stylesheets
-require_once(get_template_directory().'/assets/functions/enqueue-scripts.php'); 
+require_once(get_template_directory().'/functions/enqueue-scripts.php'); 
 
 // Register custom menus and menu walkers
-require_once(get_template_directory().'/assets/functions/menu.php'); 
-require_once(get_template_directory().'/assets/functions/menu-walkers.php'); 
+require_once(get_template_directory().'/functions/menu.php'); 
+require_once(get_template_directory().'/functions/menu-walkers.php'); 
 
 // Register sidebars/widget areas
-require_once(get_template_directory().'/assets/functions/sidebar.php'); 
+require_once(get_template_directory().'/functions/sidebar.php'); 
 
 // Makes WordPress comments suck less
-require_once(get_template_directory().'/assets/functions/comments.php'); 
+require_once(get_template_directory().'/functions/comments.php'); 
 
 // Replace 'older/newer' post links with numbered navigation
-require_once(get_template_directory().'/assets/functions/page-navi.php'); 
+require_once(get_template_directory().'/functions/page-navi.php'); 
 
 // Adds support for multiple languages
-require_once(get_template_directory().'/assets/translation/translation.php');
+require_once(get_template_directory().'/functions/translation/translation.php');
 
 // Adds Schema.org
-require_once(get_template_directory().'/assets/functions/scheme.php'); 
+require_once(get_template_directory().'/functions/scheme.php'); 
+
+// Customize the WordPress login menu
+require_once(get_template_directory().'/functions/login.php');

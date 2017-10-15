@@ -1,8 +1,0 @@
-{
-  "name": "jbst4",
-  "private": true,
-  "ignore":  [],
-  "dependencies": {
-    "bootstrap": "4"
-  }
-}
