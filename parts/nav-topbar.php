@@ -9,7 +9,7 @@ function jbst4_toggle_button() {
 }    
 ?>
 <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'jbst-4' ); ?></a>
-<header itemscope itemtype="https://schema.org/WPHeader">
+
 <?php
 if (has_custom_logo()) {
 ?>    
@@ -36,5 +36,3 @@ if (has_custom_logo()) {
     <?php get_search_form(); ?> 
   </div>
 </nav>
-
-</header>
