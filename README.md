@@ -64,8 +64,8 @@ The Masonry template organizes your post into [Masonry](http://masonry.desandro.
 ## Offcanvas menu template
 The Offcanvas menu temlate contains a toggleable off-canvas navigation menu for small viewports.
 
-<strike>
-### CSS Only
+
+### <strike>CSS Only
 - You can find the CSS only version at [https://github.com/bassjobsen/jbst-4](https://github.com/bassjobsen/jbst-4)
 
 ### Flexbox
@@ -73,5 +73,5 @@ The Offcanvas menu temlate contains a toggleable off-canvas navigation menu for 
 </strike>
 
 ### Credits
-- Forked from and thanks to [JBST4](http://jointswp.com/)
+- Forked from and thanks to [JointsWP](http://jointswp.com/)
 - [Bootstrap](http://getbootstrap.com/)
