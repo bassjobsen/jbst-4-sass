@@ -11,7 +11,7 @@ Template Name: Off-canvas Side bar
 	
 		    <main id="main" class="col-xs-12 col-md-8" role="main" itemprop="mainContentOfPage">
 
-              <p class="pull-xs-right hidden-md-up">
+              <p class="float-right d-md-none">
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas"><?php _e('Toggle nav', 'jbst-4') ?></button>
               </p>
               		

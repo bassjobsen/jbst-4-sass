@@ -3,7 +3,7 @@ function jbst4_site_scripts() {
   global $wp_styles; // Call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
     
      // Adding tether in the footer
-    wp_enqueue_script( 'tether', get_template_directory_uri() . '/vendor/tether/dist/js/tether.min.js', array( 'jquery' ), '1.3.2', true );
+    wp_enqueue_script( 'tether', get_template_directory_uri() . '/vendor/popper.js/dist/umd/popper.min.js', array( 'jquery' ), '1.12.5', true );
     
     // Adding Bootstrap scripts file in the footer
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery','tether' ), '4.0', true );

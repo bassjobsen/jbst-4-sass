@@ -1,8 +1,8 @@
 .custom-logo {
   width: 180px;
-  padding-left: $spacer-x;
+  padding-left: $spacer;
   @include media-breakpoint-up(md) {
-    padding-top: $spacer-y * 3;
+    padding-top: $spacer * 3;
     padding-left: 0;
     width: 360px;
   }

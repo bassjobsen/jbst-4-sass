@@ -13,15 +13,19 @@ class JBST4_Topbar_Menu_Walker extends Walker_Nav_Menu {
     $active = in_array('current-menu-item', $item->classes);
     $indent = ' ';
     // build html
-    $output .= $indent . '<li class="nav-item">';
-  
+    if($active) {
+        $output .= $indent . '<li class="nav-item active">';
+    }
+    else {
+        $output .= $indent . '<li class="nav-item">';
+    }    
     // link attributes
     $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
     $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
     $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
     $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
-    if(in_array('current-menu-item', $item->classes)) {
-      $attributes .= ' class="nav-link active"';
+    if($active) {
+      $attributes .= ' class="nav-link"';
         $item_output = sprintf( '%1$s<a%2$s>%3$s%4$s%5$s  <span class="sr-only">(' . __('current', 'jbst-4') . ')</span></a>%6$s',
         $args->before,
         $attributes,

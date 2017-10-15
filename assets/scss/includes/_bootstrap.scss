@@ -1,20 +1,14 @@
 /*!
- * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-// Core variables and mixins
+@import "../../vendor/bootstrap/scss/functions";
 @import "../../vendor/bootstrap/scss/variables";
 @import "../../vendor/bootstrap/scss/mixins";
-@import "../../vendor/bootstrap/scss/custom";
-
-// Reset and dependencies
-@import "../../vendor/bootstrap/scss/normalize";
 @import "../../vendor/bootstrap/scss/print";
-
-// Core CSS
 @import "../../vendor/bootstrap/scss/reboot";
 @import "../../vendor/bootstrap/scss/type";
 @import "../../vendor/bootstrap/scss/images";
@@ -23,8 +17,6 @@
 @import "../../vendor/bootstrap/scss/tables";
 @import "../../vendor/bootstrap/scss/forms";
 @import "../../vendor/bootstrap/scss/buttons";
-
-// Components
 @import "../../vendor/bootstrap/scss/transitions";
 @import "../../vendor/bootstrap/scss/dropdown";
 @import "../../vendor/bootstrap/scss/button-group";
@@ -41,14 +33,9 @@
 @import "../../vendor/bootstrap/scss/progress";
 @import "../../vendor/bootstrap/scss/media";
 @import "../../vendor/bootstrap/scss/list-group";
-@import "../../vendor/bootstrap/scss/responsive-embed";
 @import "../../vendor/bootstrap/scss/close";
-
-// Components w/ JavaScript
 @import "../../vendor/bootstrap/scss/modal";
 @import "../../vendor/bootstrap/scss/tooltip";
 @import "../../vendor/bootstrap/scss/popover";
 @import "../../vendor/bootstrap/scss/carousel";
-
-// Utility classes
 @import "../../vendor/bootstrap/scss/utilities";
